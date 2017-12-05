@@ -60,6 +60,7 @@
       <header class="mdl-layout__header mdc-bg-deep-purple-700 mdl-layout__header--scroll">
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
           <h4>Profile settings</h4>
+          <a class="mdl-layout__header-search" href="#"><i class="mdl-color-text--white mdi-set mdi-magnify" role="presentation"></i></a>
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdc-bg-deep-purple-700">
           <a href="#profile" class="mdl-layout__tab is-active">Profile</a>
@@ -70,33 +71,41 @@
           <a href="#features" class="mdl-layout__tab">Documents</a>
           <a href="#features" class="mdl-layout__tab">Availability</a>
           <a href="#features" class="mdl-layout__tab">Billing</a>
-          <!--<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-            <i class="material-icons" role="presentation">add</i>
-            <span class="visuallyhidden">Add</span>
-          </button>-->
         </div>
       </header>
       <div class="demo-drawer mdl-layout__drawer mdl-color-text--blue-grey-50">
         <div class="demo-drawer-header mdc-bg-deep-purple-700 center-xs middle-xs">
-          <img src="images/user.jpg" class="demo-avatar">
+          <div class="bdt-status bdt-status--online">
+              <img src="images/user.jpg" class="demo-avatar">
+          </div>
           <nav class="controll-icons">
-            <a class="controll-icons__item" href="#"><i class="mdl-color-text--white mdi-set mdi-bell" role="presentation"></i></a>
+            <a class="controll-icons__item bdt-notifications__container" href="#">
+              <i class="mdl-color-text--white mdi-set mdi-bell" role="presentation"></i>
+              <span class="bdt-notifications bdt-notifications--warning">1</span>
+            </a>
             <a class="controll-icons__item" href="#"><i class="mdl-color-text--white mdi-set mdi-settings" role="presentation"></i></a>
             <a class="controll-icons__item" href="#"><i class="mdl-color-text--white mdi-set mdi-arrow-right-bold-box" role="presentation"></i></a>
           </nav>
         </div>
         <nav class="demo-navigation mdl-navigation mdl-color--white-grey-100">
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">view-dashboard</i>Home</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>Purchases</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>
-          <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+          <div class="mdl-layout-spacer">
+            <h6 class="demo-navigation-title">
+                <i class="mdl-color-text--white-grey-100 mdi-set mdi-view-dashboard" role="presentation"></i>
+                <span class="mdl-color-text--white-grey-300 bdt-navigation__span">Projects dashboard</span>
+            </h6>
+          </div>
+          <div class="mdl-layout-spacer">
+            <h6 class="demo-navigation-title">
+                <i class="mdl-color-text--white-grey-100 mdi-set mdi-view-dashboard" role="presentation"></i>
+                <span class="mdl-color-text--white-grey-300 bdt-navigation__span">Projects dashboard</span>
+            </h6>
+          </div>
+          <div class="mdl-layout-spacer">
+            <h6 class="demo-navigation-title">
+              <i class="mdl-color-text--white-grey-100 mdi-set mdi-view-dashboard" role="presentation"></i>
+              <span class="mdl-color-text--white-grey-300 bdt-navigation__span">Projects dashboard</span>
+            </h6>
+          </div>
         </nav>
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">

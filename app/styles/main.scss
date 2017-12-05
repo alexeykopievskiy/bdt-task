@@ -21,12 +21,37 @@ will be correctly compiled during `gulp serve` and `gulp`
 
 @import "./material-design-color-palette.min.css";
 
+@import "./includes/statuses";
+@import "./includes/notifications";
+
 .mdl-color--white-grey-100 {
   background-color: #FCFCFD;
 }
+.mdl-color--white-grey-200 {
+  background-color: #DADFEA;
+}
+/*.mdl-color--white-grey-200 {
+  color: #DADFEA;
+}*/
+.mdl-color--white-grey-300 {
+  background-color: #7B7B7C;
+}
+
 
 .mdl-color-text--white {
   color: #FFF;
+}
+
+.mdl-color-text--white-grey-100 {
+  color: #DADFEA;
+}
+
+/*.mdl-color-text--white-grey-200 {
+  color: #FFF;
+}*/
+
+.mdl-color-text--white-grey-300 {
+  color: #7B7B7C;
 }
 
 .mdi-set {
@@ -37,6 +62,7 @@ html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.04em;
 }
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
@@ -249,6 +275,7 @@ html, body {
 }
 .demo-drawer .demo-navigation {
   z-index: -2;
+  padding: 20px 20px 110px 35px;
 }
 /* END iOS Safari specific workaround */
 .demo-drawer .mdl-menu .mdl-menu__item {
@@ -430,7 +457,9 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 
 .controll-icons__item {
-  margin: 1em;
+  margin: 0 1em;
+  height: 30px;
+  display: inline-block;
 }
 
 .mdl-layout__header {
@@ -442,4 +471,23 @@ _:-ms-input-placeholder, :root .demo-graph {
   .mdl-layout--fixed-drawer>.mdl-layout__header .mdl-layout__header-row {
       padding-left: 20px;
   }
+}
+
+.mdl-layout__header-row {
+  justify-content: space-between;
+}
+
+.mdl-layout__header-search {
+  margin-right: 40px;
+}
+
+.demo-navigation-title {
+  display: flex;
+  align-items: center;
+}
+
+.bdt-navigation__span {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 10px;
 }
