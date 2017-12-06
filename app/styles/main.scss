@@ -23,6 +23,7 @@ will be correctly compiled during `gulp serve` and `gulp`
 
 @import "./includes/statuses";
 @import "./includes/notifications";
+@import "./includes/marks";
 
 .mdl-color--white-grey-100 {
   background-color: #FCFCFD;
@@ -46,9 +47,9 @@ will be correctly compiled during `gulp serve` and `gulp`
   color: #DADFEA;
 }
 
-/*.mdl-color-text--white-grey-200 {
-  color: #FFF;
-}*/
+.mdl-color-text--white-grey-200 {
+  color: #B3B3B3;
+}
 
 .mdl-color-text--white-grey-300 {
   color: #7B7B7C;
@@ -275,7 +276,7 @@ html, body {
 }
 .demo-drawer .demo-navigation {
   z-index: -2;
-  padding: 20px 20px 110px 35px;
+  padding: 20px 0px 110px;
 }
 /* END iOS Safari specific workaround */
 .demo-drawer .mdl-menu .mdl-menu__item {
@@ -490,4 +491,35 @@ _:-ms-input-placeholder, :root .demo-graph {
   font-weight: 700;
   text-transform: uppercase;
   margin-left: 10px;
+}
+
+.demo-navigation__block {
+  border-bottom: 1px solid #EDEFF2;
+  padding: 0 20px 5px 35px;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.demo-navigation__block-item {
+  display: block;
+  text-decoration: none;
+  margin: 15px 0 15px 40px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+
+  &:last-child {
+    padding-bottom: 5px;
+  }
+}
+
+.demo-navigation__block-item span,
+.demo-navigation__block-item i{
+  margin-right: 15px;
+}
+
+.demo-navigation__block-item i {
+  margin-left: -5px;
 }
