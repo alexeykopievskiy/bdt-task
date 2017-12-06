@@ -523,3 +523,10 @@ _:-ms-input-placeholder, :root .demo-graph {
 .demo-navigation__block-item i {
   margin-left: -5px;
 }
+
+.demo-sidebar {
+  right: 0;
+  left: unset;
+  transform: translateX(0);
+  width: 100px;
+}
